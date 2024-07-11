@@ -24,10 +24,10 @@ const navLinks = [
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#ff0000', // Set the primary color
+            main: '#ff0000', 
         },
         secondary: {
-            main: '#00ff00', // Set the secondary color
+            main: '#00ff00', 
         },
     },
 });
@@ -116,7 +116,7 @@ const NavBar = () => {
                 setNavBg('bg-white dark:bg-black dark:text-white text-black');
             }
         } else {
-            // setNavBg(`dark:text-white ${isHome ? 'text-white bg-transparent' : 'text-black dark:text-white dark:bg-black'}`);
+            
             setNavBg(`${isHome || location.pathname === '/' ? 'bg-transparent' : 'bg-white dark:bg-black'} dark:text-white text-white`);
 
         }
@@ -151,7 +151,7 @@ const NavBar = () => {
                         </button>
                     </div>
 
-                    {/* Navigation Links */}
+                    
                     <div className="hidden  text-black dark:text-white md:block">
                         <div className="flex">
                             <ul className="ml-10 flex items-center space-x-4 pr-4">

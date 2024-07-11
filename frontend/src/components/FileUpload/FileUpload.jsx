@@ -53,7 +53,7 @@ const FileUpload = () => {
 
                 preview.forEach((elem) => {
                     elem.onload = () => {
-                        URL.revokeObjectURL(elem.src); // free memory
+                        URL.revokeObjectURL(elem.src); 
                     };
                 });
 
